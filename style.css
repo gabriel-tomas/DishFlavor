@@ -89,7 +89,7 @@ nav {
     backdrop-filter: blur(10px);
     margin-left: 100px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: -1;
+    z-index: 0;
 }
 
 .main-section-main-text-title {
@@ -122,6 +122,10 @@ nav {
     padding-block: 18px;
     background-color: rgba(255, 255, 255, 0.73);
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.main-section-main-text-button:hover {
+    cursor: pointer;
 }
 
 .ingredientes-frescos {
@@ -271,4 +275,124 @@ nav {
 
 .main-section-pratos-carnes-dishes-item {
     background-color: hsla(18, 65%, 45%, 0.925);
+}
+
+@media (max-width: 1112px) {
+    .main-header-title {
+        font-size: 1.9em;
+    }
+    
+    .nav-item {
+        font-size: 1em;
+    }
+
+    .main-section-main {
+        height: fit-content;
+    }
+
+    .main-section-main-text {
+        margin-left: 20px;
+    }
+
+    .ingredientes-frescos {
+        height: 60vh;
+    }
+
+    .ingredientes-frescos-text {
+        font-size: .8em;
+        padding-inline: 90px;
+    }
+}
+
+@media (max-width: 860px) {
+    .main-section-main {
+        justify-content: flex-end;
+    }
+
+    .main-section-main-backvideo {
+        transform: rotateY(180deg);
+    }
+
+    .main-section-main-text {
+        width: 60vw;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: -3px 0px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .main-section-main-text-title {
+        background-color: #698c4581;
+        font-size: 1.6em;
+    }
+
+    .main-section-main-text-paragraph {
+        font-size: 1.1em;
+        height: 100%;
+    }
+
+    .main-section-main-text-button {
+        background-color: #698c4581;
+        font-size: 1em;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    .ingredientes-frescos-text {
+        padding-inline: 50px;
+    }
+
+    
+}
+
+@media (max-width: 750px) {
+    .ingredientes-frescos-text-title {
+        font-size: 2em;
+        line-height: normal;
+    }
+
+    .ingredientes-frescos-text-paragraph {
+        font-size: 1.15em;
+    }
+}
+
+@media (max-width: 547px) {
+    .ingredientes-frescos-text {
+        padding-inline: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-section-main-text, .main-section-main-text-title, .main-section-main-text-button{
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    .main-section-main-text {
+        width: 70vw;
+        height: 65vh;
+    }
+
+    .main-section-main-text-title {
+        font-size: 1.3em;
+    }
+
+    .main-section-main-text-paragraph {
+        font-size: .9em;
+    }
+
+    .main-section-main-text-button {
+        font-size: .8em;
+    }
+
+    .ingredientes-frescos-text-title {
+        font-size: 1.5em;
+    }
+
+    .ingredientes-frescos-text-paragraph {
+        font-size: 1em;
+        line-height: normal;
+    }
 }
