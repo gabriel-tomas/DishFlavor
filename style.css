@@ -52,6 +52,7 @@ nav {
     top: 0px;
     backdrop-filter: blur(4px);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 .nav-item {
@@ -123,14 +124,78 @@ nav {
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.25);
 }
 
+.ingredientes-frescos {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.ingredientes-frescos-text {
+    padding-inline: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    box-shadow: 10px 0px 12px rgba(0, 0, 0, 0.527);
+    z-index: 0;
+}
+
+.ingredientes-frescos-text-title {
+    font-family: var(--font0);
+    font-weight: normal;
+    color: #0A0A0A;
+    font-size: 2.7em;
+    line-height: 57px;
+}
+
+.ingredientes-frescos-text-paragraph {
+    font-family: var(--font-default);
+    font-weight: 400;
+    color: #161616;
+    font-size: 1.25em;
+    margin-top: 10px;
+    line-height: 27px;
+}
+
+.ingredientes-frescos-image {
+    width: 34.5%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-section-backdishes {
+    background-color: var(--color4);
+}
+
+.main-section-backdishes-header {
+    padding-block: 100px;
+    background: white url("images/backdishes/header-back-backdishes.jpg") center center no-repeat;
+    background-size: cover;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.486);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.main-section-backdishes-header-title {
+    font-family: var(--font0);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: .4em;
+    word-spacing: .6em;
+}
+
 .main-section-pratos-vegetais {
     height: 100vh;
     background-color: white;
-    box-shadow: 0px 0px 40px black;
 }
 
 .main-section-pratos-vegetais-header {
-    background-image: url("images/pratos-vegetais/background-pratos-vegetais.jpg");
+    background-image: url("images/backdishes/pratos-vegetais/background-pratos-vegetais.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
