@@ -27,14 +27,14 @@ body {
     background-color: var(--color4);
 }
 
-header {
+#main-header {
     background-color: var(--color1);
     padding-block: 7px;
     backdrop-filter: blur(12.5px);
     filter: opacity(.9);
 }
 
-.header-title {
+.main-header-title {
     color: white;
     text-align: center;
     font-family: var(--font0);
@@ -51,6 +51,7 @@ nav {
     position: sticky;
     top: 0px;
     backdrop-filter: blur(4px);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .nav-item {
@@ -106,6 +107,7 @@ nav {
     font-family: var(--font-default);
     font-size: 21px;
     margin: 26px;
+    line-height: 1.45em;
 }
 
 .main-section-main-text-button {
@@ -121,7 +123,79 @@ nav {
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.main-section1 {
+.main-section-pratos-vegetais {
     height: 100vh;
     background-color: white;
+    box-shadow: 0px 0px 40px black;
+}
+
+.main-section-pratos-vegetais-header {
+    background-image: url("images/pratos-vegetais/background-pratos-vegetais.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 64px 0px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.main-section-pratos-vegetais-header-title, .main-section-pratos-vegetais-header-subtitle {
+    font-family: var(--font0);
+    font-weight: normal;
+    color: white;
+    font-size: 36px;
+    letter-spacing: .06em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.main-section-pratos-vegetais-header-title {
+    margin-bottom: 3px;
+}
+
+.main-section-pratos-vegetais-header-subtitle {
+    font-size: 28px;
+    letter-spacing: .02em;
+}
+
+.main-section-pratos-vegetais-dishes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 6vh;
+}
+
+.main-section-pratos-vegetais-dishes-item {
+    background-color: var(--color2);
+    padding: 10px;
+    border-radius: 5px;
+    height: 420px;
+    max-width: 320px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+}
+
+.main-section-pratos-vegetais-dishes-item-title {
+    font-family: var(--font1);
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.main-section-pratos-vegetais-dishes-item-paragraph {
+    font-family: var(--font-default);
+    color: #FFFCFC;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.main-section-pratos-vegetais-dishes-item-image {
+    width: 290px;
+    margin-top: 20px;
+    display: block;
+    margin-inline: auto;
+}
+
+.main-section-pratos-vegetais-dishes-item-image-space {
+    margin-top: 48px;
 }
