@@ -194,8 +194,9 @@ nav {
 }
 
 .main-section-pratos-vegetais, .main-section-pratos-carnes {
-    height: 100vh;
+    height: fit-content;
     background-color: white;
+    padding-bottom: 70px;
 }
 
 .main-section-pratos-vegetais-header, .main-section-pratos-carnes-header {
@@ -233,6 +234,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 6vh;
+    gap: 25px;
 }
 
 .main-section-pratos-vegetais-dishes-item, .main-section-pratos-carnes-dishes-item {
@@ -286,14 +288,23 @@ nav {
         font-size: 1em;
     }
 
-    .main-section-main {
-        height: fit-content;
-    }
-
     .main-section-main-text {
         margin-left: 20px;
+        max-width: 300px;
     }
 
+    .main-section-main-text-title {
+        font-size: 1.3em;
+    }
+
+    .main-section-main-text-paragraph {
+        font-size: .9em;
+    }
+
+    .main-section-main-text-button {
+        font-size: .8em;
+    }
+    
     .ingredientes-frescos {
         height: 60vh;
     }
@@ -302,11 +313,68 @@ nav {
         font-size: .8em;
         padding-inline: 90px;
     }
+
+    .ingredientes-frescos-text-title {
+        font-size: 2em;
+        line-height: normal;
+    }
+
+    .ingredientes-frescos-text-paragraph {
+        font-size: 1.2em;
+        line-height: normal;
+    }
+    
+    .main-section-backdishes-header {
+        padding-block: 60px;
+    }
+
+    .main-section-backdishes-header-title {
+        font-size: 2em;
+    }
+
+    .main-section-pratos-vegetais-header, .main-section-pratos-carnes-header {
+        padding-block: 25px;
+    }
+
+    .main-section-pratos-vegetais-header-title, .main-section-pratos-carnes-header-title {
+        font-size: 1.8em;
+    }
+
+    .main-section-pratos-vegetais-header-subtitle, .main-section-pratos-carnes-header-subtitle {
+        font-size: 1.4em;
+    }
+
+    .main-section-pratos-vegetais-dishes, .main-section-pratos-carnes-dishes {
+        margin-inline: 20px;
+        justify-content: center;
+    }
+
+    .main-section-pratos-vegetais-dishes-item, .main-section-pratos-carnes-dishes-item {
+        max-width: 230px;
+        height: 330px;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-title, .main-section-pratos-carnes-dishes-item-title {
+        font-size: 1em;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-paragraph, .main-section-pratos-carnes-dishes-item-paragraph {
+        font-size: 1em;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-image, .main-section-pratos-carnes-dishes-item-image {
+        width: 100%;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-image-space {
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 860px) {
     .main-section-main {
         justify-content: flex-end;
+        height: fit-content;
     }
 
     .main-section-main-backvideo {
@@ -324,17 +392,14 @@ nav {
 
     .main-section-main-text-title {
         background-color: #698c4581;
-        font-size: 1.6em;
     }
 
     .main-section-main-text-paragraph {
-        font-size: 1.1em;
         height: 100%;
     }
 
     .main-section-main-text-button {
         background-color: #698c4581;
-        font-size: 1em;
         color: white;
         margin-bottom: 5px;
     }
@@ -343,23 +408,101 @@ nav {
         padding-inline: 50px;
     }
 
-    
-}
-
-@media (max-width: 750px) {
     .ingredientes-frescos-text-title {
-        font-size: 2em;
-        line-height: normal;
+        font-size: 1.9em;
     }
 
     .ingredientes-frescos-text-paragraph {
         font-size: 1.15em;
+    }
+
+    .main-section-backdishes-header {
+        padding-block: 45px;
+    }
+
+    .main-section-backdishes-header-title {
+        font-size: 1.4em;
+    }
+
+    .main-section-pratos-vegetais-header, .main-section-pratos-carnes-header {
+        padding-block: 15px;
+    }
+
+    .main-section-pratos-vegetais-header-title, .main-section-pratos-carnes-header-title {
+        font-size: 1.4em;
+    }
+
+    .main-section-pratos-vegetais-header-subtitle, .main-section-pratos-carnes-header-subtitle {
+        font-size: 1.1em;
+    }
+
+    .main-section-pratos-vegetais-dishes-item, .main-section-pratos-carnes-dishes-item {
+        max-width: 150px;
+        height: 250px;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-title, .main-section-pratos-carnes-dishes-item-title {
+        font-size: .8em;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-paragraph, .main-section-pratos-carnes-dishes-item-paragraph {
+        font-size: .8em;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-image, .main-section-pratos-carnes-dishes-item-image {
+        margin-top: 10px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .ingredientes-frescos-text-title {
+        font-size: 1.8em;
+    }
+
+    .ingredientes-frescos-text-paragraph {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 611px) {
+    .main-section-pratos-vegetais-dishes, .main-section-pratos-carnes-dishes {
+        flex-wrap: nowrap;
+    }
+
+    .main-section-pratos-vegetais-dishes-item, .main-section-pratos-carnes-dishes-item {
+        height: 250px;
     }
 }
 
 @media (max-width: 547px) {
     .ingredientes-frescos-text {
         padding-inline: 30px;
+    }
+
+    .main-section-backdishes-header-title {
+        font-size: 1.3em;
+        letter-spacing: .365em;
+    }
+
+    .main-section-pratos-vegetais-header-title, .main-section-pratos-carnes-header-title {
+        font-size: 1.2em;
+    }
+
+    .main-section-pratos-vegetais-header-subtitle, .main-section-pratos-carnes-header-subtitle {
+        font-size: 1em;
+    }
+
+    .main-section-pratos-vegetais-dishes-item, .main-section-pratos-carnes-dishes-item {
+        height: 210px;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-title, .main-section-pratos-carnes-dishes-item-title {
+        font-size: .7em;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-paragraph, .main-section-pratos-carnes-dishes-item-paragraph {
+        font-size: .7em;
     }
 }
 
@@ -369,22 +512,27 @@ nav {
     }
 }
 
+@media (max-width: 465px) {
+    .main-section-pratos-vegetais-dishes, .main-section-pratos-carnes-dishes {
+        flex-wrap: wrap;
+        padding-inline: 50px;
+    }
+
+    .main-section-pratos-vegetais-dishes-item, .main-section-pratos-carnes-dishes-item {
+        max-width: 100%;
+        height: fit-content;
+    }
+
+    .main-section-pratos-carnes-dishes-item-image {
+        width: 80%;
+        margin-block: 28px;
+    }
+}
+
 @media (max-width: 425px) {
     .main-section-main-text {
         width: 70vw;
         height: 65vh;
-    }
-
-    .main-section-main-text-title {
-        font-size: 1.3em;
-    }
-
-    .main-section-main-text-paragraph {
-        font-size: .9em;
-    }
-
-    .main-section-main-text-button {
-        font-size: .8em;
     }
 
     .ingredientes-frescos-text-title {
@@ -393,6 +541,29 @@ nav {
 
     .ingredientes-frescos-text-paragraph {
         font-size: 1em;
-        line-height: normal;
+    }
+
+    .main-section-backdishes-header {
+        padding-block: 30px;
+    }
+
+    .main-section-backdishes-header-title {
+        font-size: 1.1em;
+    }
+
+    .main-section-pratos-vegetais-header-title, .main-section-pratos-carnes-header-title {
+        font-size: 1em;
+    }
+
+    .main-section-pratos-vegetais-header-subtitle, .main-section-pratos-carnes-header-subtitle {
+        font-size: .78em;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-title, .main-section-pratos-carnes-dishes-item-title {
+        font-size: .6em;
+    }
+
+    .main-section-pratos-vegetais-dishes-item-paragraph, .main-section-pratos-carnes-dishes-item-paragraph {
+        font-size: .6em;
     }
 }
