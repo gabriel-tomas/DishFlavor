@@ -177,7 +177,7 @@ nav {
 
 .main-section-backdishes-header {
     padding-block: 100px;
-    background: white url("images/backdishes/header-back-backdishes.jpg") center center no-repeat;
+    background: url("images/backdishes/header-back-backdishes.jpg") center center no-repeat;
     background-size: cover;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.486);
     position: relative;
@@ -565,5 +565,19 @@ nav {
 
     .main-section-pratos-vegetais-dishes-item-paragraph, .main-section-pratos-carnes-dishes-item-paragraph {
         font-size: .6em;
+    }
+}
+
+@media (max-width: 280px) {
+    .nav-item {
+        font-size: .8em;
+    }
+
+    .main-section-main-text-title {
+        font-size: 1.2em;
+    }
+
+    .main-section-main-text-paragraph {
+        font-size: .8em;
     }
 }
