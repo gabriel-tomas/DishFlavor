@@ -24,8 +24,7 @@
 }
 
 body {
-    background-color: var(--color2);
-    z-index: -1;
+    background-color: var(--color4);
 }
 
 #main-header {
@@ -135,7 +134,7 @@ nav {
 }
 
 .ingredientes-frescos {
-    background-color: white;
+    background-color: black;
     height: 100vh;
     display: flex;
     flex-direction: row-reverse;
@@ -178,7 +177,7 @@ nav {
 }
 
 .main-section-backdishes {
-    background-color: var(--color4);
+    background-color: var(--color2);
 }
 
 .main-section-backdishes-header {
