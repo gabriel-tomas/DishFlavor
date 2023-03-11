@@ -63,7 +63,7 @@ nav {
     color: var(--color4);
     text-decoration: none;
     font-family: var(--font0);
-    font-size: 20px;
+    font-size: 17.5px;
 }
 
 .nav-item + .nav-item {
@@ -102,7 +102,7 @@ nav {
     font-family: var(--font0);
     font-weight: normal;
     background-color: rgba(105, 140, 69, 0.65);
-    font-size: 30px;
+    font-size: 27px;
     border-radius: 5px 5px 0px 0px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     padding: 10px 20px;
@@ -111,8 +111,8 @@ nav {
 .main-section-main-text-paragraph {
     color: var(--color4);
     font-family: var(--font-default);
-    font-size: 21px;
-    margin: 26px;
+    font-size: 19px;
+    margin: 35px 40px;
     line-height: 1.45em;
 }
 
@@ -122,7 +122,7 @@ nav {
     text-transform: uppercase;
     border: none;
     border-radius: 0px 0px 5px 5px;
-    font-size: 19px;
+    font-size: 17px;
     color: black;
     padding-block: 18px;
     background-color: rgba(255, 255, 255, 0.73);
@@ -144,7 +144,7 @@ nav {
 }
 
 .ingredientes-frescos-text {
-    padding-inline: 150px;
+    padding-inline: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,16 +157,16 @@ nav {
     font-family: var(--font0);
     font-weight: normal;
     color: #0A0A0A;
-    font-size: 2.7em;
-    line-height: 57px;
+    font-size: 2.5em;
+    line-height: 50px;
 }
 
 .ingredientes-frescos-text-paragraph {
     font-family: var(--font-default);
     font-weight: 400;
     color: #161616;
-    font-size: 1.25em;
-    margin-top: 10px;
+    font-size: 1.15em;
+    margin-top: 15px;
     line-height: 27px;
 }
 
@@ -192,7 +192,7 @@ nav {
 .main-section-backdishes-header-title {
     font-family: var(--font0);
     color: white;
-    font-size: 3em;
+    font-size: 2.1em;
     text-align: center;
     letter-spacing: .4em;
     word-spacing: .6em;
@@ -217,7 +217,7 @@ nav {
     font-family: var(--font0);
     font-weight: normal;
     color: white;
-    font-size: 36px;
+    font-size: 27px;
     letter-spacing: .06em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
@@ -228,7 +228,7 @@ nav {
 }
 
 .main-section-pratos-vegetais-header-subtitle, .main-section-pratos-carnes-header-subtitle {
-    font-size: 28px;
+    font-size: 20px;
     letter-spacing: .02em;
 }
 
@@ -256,13 +256,14 @@ nav {
     color: white;
     font-weight: normal;
     text-transform: uppercase;
+    font-size: 1em;
 }
 
 .main-section-pratos-vegetais-dishes-item-paragraph, .main-section-pratos-carnes-dishes-item-paragraph {
     font-family: var(--font-default);
     color: #FFFCFC;
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: .95em;
 }
 
 .main-section-pratos-vegetais-dishes-item-image, .main-section-pratos-carnes-dishes-item-image {
